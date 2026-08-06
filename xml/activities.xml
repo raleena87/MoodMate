@@ -1,423 +1,403 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../xsl/activities.xsl"?>
-<activities>
-
     <activity>
         <id>ACT001</id>
-        <name>Read a Book</name>
-        <mood>Bored</mood>
-        <duration>20 minutes</duration>
-        <location>Indoor</location>
-        <category>Learning</category>
-        <energy>Low</energy>
-        <description>Read your favourite book for twenty minutes.</description>
-    </activity>
-
-    <activity>
-        <id>ACT002</id>
-        <name>Go for a Walk</name>
-        <mood>Stressed</mood>
-        <duration>30 minutes</duration>
-        <location>Outdoor</location>
-        <category>Exercise</category>
-        <energy>Medium</energy>
-        <description>Take a calm walk around your neighbourhood to clear your head.</description>
-    </activity>
-
-    <activity>
-        <id>ACT003</id>
-        <name>Practice Deep Breathing</name>
-        <mood>Anxious</mood>
-        <duration>5 minutes</duration>
-        <location>Indoor</location>
-        <category>Mindfulness</category>
-        <energy>Low</energy>
-        <description>Sit comfortably and follow slow, deep breaths to settle your nerves.</description>
-    </activity>
-
-    <activity>
-        <id>ACT004</id>
         <name>Dance to Your Favourite Song</name>
         <mood>Happy</mood>
         <duration>10 minutes</duration>
         <location>Indoor</location>
         <category>Fun</category>
         <energy>High</energy>
-        <description>Put on an upbeat track and dance around the room.</description>
+        <description>Dance to Your Favourite Song is a great fun activity when you are feeling happy.</description>
     </activity>
-
     <activity>
-        <id>ACT005</id>
-        <name>Journal Your Thoughts</name>
-        <mood>Sad</mood>
-        <duration>15 minutes</duration>
-        <location>Indoor</location>
-        <category>Mindfulness</category>
-        <energy>Low</energy>
-        <description>Write down how you are feeling to help process your emotions.</description>
-    </activity>
-
-    <activity>
-        <id>ACT006</id>
-        <name>Go for a Run</name>
-        <mood>Energetic</mood>
-        <duration>25 minutes</duration>
-        <location>Outdoor</location>
-        <category>Exercise</category>
-        <energy>High</energy>
-        <description>Head outside for a light jog to burn off extra energy.</description>
-    </activity>
-
-    <activity>
-        <id>ACT007</id>
-        <name>Try a New Recipe</name>
-        <mood>Bored</mood>
-        <duration>45 minutes</duration>
-        <location>Indoor</location>
-        <category>Creative</category>
-        <energy>Medium</energy>
-        <description>Cook something you have never made before.</description>
-    </activity>
-
-    <activity>
-        <id>ACT008</id>
-        <name>Call a Friend</name>
-        <mood>Lonely</mood>
-        <duration>20 minutes</duration>
-        <location>Indoor</location>
-        <category>Social</category>
-        <energy>Low</energy>
-        <description>Catch up with someone you have not spoken to in a while.</description>
-    </activity>
-
-    <activity>
-        <id>ACT009</id>
-        <name>Stretching Routine</name>
-        <mood>Tired</mood>
-        <duration>10 minutes</duration>
-        <location>Indoor</location>
-        <category>Exercise</category>
-        <energy>Low</energy>
-        <description>Loosen up tight muscles with a gentle stretching sequence.</description>
-    </activity>
-
-    <activity>
-        <id>ACT010</id>
-        <name>Sketch or Doodle</name>
-        <mood>Bored</mood>
-        <duration>15 minutes</duration>
-        <location>Indoor</location>
-        <category>Creative</category>
-        <energy>Low</energy>
-        <description>Grab a pencil and doodle whatever comes to mind.</description>
-    </activity>
-
-    <activity>
-        <id>ACT011</id>
+        <id>ACT002</id>
         <name>Visit a Park</name>
         <mood>Happy</mood>
         <duration>40 minutes</duration>
         <location>Outdoor</location>
         <category>Fun</category>
         <energy>Medium</energy>
-        <description>Spend time outdoors enjoying nature and fresh air.</description>
+        <description>Visit a Park is a great fun activity when you are feeling happy.</description>
     </activity>
-
     <activity>
-        <id>ACT012</id>
-        <name>Listen to a Podcast</name>
-        <mood>Bored</mood>
-        <duration>30 minutes</duration>
+        <id>ACT003</id>
+        <name>Bake Cookies</name>
+        <mood>Happy</mood>
+        <duration>45 minutes</duration>
         <location>Indoor</location>
-        <category>Learning</category>
-        <energy>Low</energy>
-        <description>Discover a new topic through an interesting podcast episode.</description>
+        <category>Creative</category>
+        <energy>Medium</energy>
+        <description>Bake Cookies is a great creative activity when you are feeling happy.</description>
     </activity>
-
     <activity>
-        <id>ACT013</id>
-        <name>Meditate</name>
-        <mood>Anxious</mood>
-        <duration>10 minutes</duration>
+        <id>ACT004</id>
+        <name>Play a Musical Instrument</name>
+        <mood>Happy</mood>
+        <duration>25 minutes</duration>
+        <location>Indoor</location>
+        <category>Creative</category>
+        <energy>High</energy>
+        <description>Play a Musical Instrument is a great creative activity when you are feeling happy.</description>
+    </activity>
+    <activity>
+        <id>ACT005</id>
+        <name>Have a Picnic</name>
+        <mood>Happy</mood>
+        <duration>60 minutes</duration>
+        <location>Outdoor</location>
+        <category>Social</category>
+        <energy>Low</energy>
+        <description>Have a Picnic is a great social activity when you are feeling happy.</description>
+    </activity>
+    <activity>
+        <id>ACT006</id>
+        <name>Write in a Journal</name>
+        <mood>Sad</mood>
+        <duration>15 minutes</duration>
         <location>Indoor</location>
         <category>Mindfulness</category>
         <energy>Low</energy>
-        <description>Quiet your mind with a short guided meditation session.</description>
+        <description>Write in a Journal is a great mindfulness activity when you are feeling sad.</description>
     </activity>
-
     <activity>
-        <id>ACT014</id>
-        <name>Play a Board Game</name>
-        <mood>Bored</mood>
-        <duration>45 minutes</duration>
+        <id>ACT007</id>
+        <name>Watch a Comedy Movie</name>
+        <mood>Sad</mood>
+        <duration>30 minutes</duration>
         <location>Indoor</location>
-        <category>Social</category>
-        <energy>Medium</energy>
-        <description>Gather friends or family for a fun board game night.</description>
+        <category>Fun</category>
+        <energy>Low</energy>
+        <description>Watch a Comedy Movie is a great fun activity when you are feeling sad.</description>
     </activity>
-
     <activity>
-        <id>ACT015</id>
-        <name>Ride a Bicycle</name>
-        <mood>Energetic</mood>
-        <duration>35 minutes</duration>
+        <id>ACT008</id>
+        <name>Nature Walk</name>
+        <mood>Sad</mood>
+        <duration>30 minutes</duration>
+        <location>Outdoor</location>
+        <category>Exercise</category>
+        <energy>Medium</energy>
+        <description>Nature Walk is a great exercise activity when you are feeling sad.</description>
+    </activity>
+    <activity>
+        <id>ACT009</id>
+        <name>Paint or Draw</name>
+        <mood>Sad</mood>
+        <duration>30 minutes</duration>
+        <location>Indoor</location>
+        <category>Creative</category>
+        <energy>Medium</energy>
+        <description>Paint or Draw is a great creative activity when you are feeling sad.</description>
+    </activity>
+    <activity>
+        <id>ACT010</id>
+        <name>Play Badminton</name>
+        <mood>Sad</mood>
+        <duration>45 minutes</duration>
         <location>Outdoor</location>
         <category>Exercise</category>
         <energy>High</energy>
-        <description>Explore your area on two wheels for an energy boost.</description>
+        <description>Play Badminton is a great exercise activity when you are feeling sad.</description>
     </activity>
-
     <activity>
-        <id>ACT016</id>
-        <name>Watch the Sunset</name>
-        <mood>Calm</mood>
-        <duration>15 minutes</duration>
-        <location>Outdoor</location>
+        <id>ACT011</id>
+        <name>Deep Breathing</name>
+        <mood>Stressed</mood>
+        <duration>5 minutes</duration>
+        <location>Indoor</location>
         <category>Mindfulness</category>
         <energy>Low</energy>
-        <description>Find a quiet spot outdoors and watch the sky change colour.</description>
+        <description>Deep Breathing is a great mindfulness activity when you are feeling stressed.</description>
     </activity>
-
     <activity>
-        <id>ACT017</id>
-        <name>Organise Your Space</name>
-        <mood>Stressed</mood>
-        <duration>25 minutes</duration>
-        <location>Indoor</location>
-        <category>Productivity</category>
-        <energy>Medium</energy>
-        <description>Tidy a small area to create a sense of calm and control.</description>
-    </activity>
-
-    <activity>
-        <id>ACT018</id>
-        <name>Learn a Few Words in a New Language</name>
-        <mood>Bored</mood>
-        <duration>20 minutes</duration>
-        <location>Indoor</location>
-        <category>Learning</category>
-        <energy>Low</energy>
-        <description>Use an app or book to pick up some new vocabulary.</description>
-    </activity>
-
-    <activity>
-        <id>ACT019</id>
-        <name>Do a Puzzle</name>
-        <mood>Bored</mood>
-        <duration>30 minutes</duration>
-        <location>Indoor</location>
-        <category>Learning</category>
-        <energy>Low</energy>
-        <description>Challenge your brain with a jigsaw or logic puzzle.</description>
-    </activity>
-
-    <activity>
-        <id>ACT020</id>
+        <id>ACT012</id>
         <name>Yoga Session</name>
         <mood>Stressed</mood>
         <duration>20 minutes</duration>
         <location>Indoor</location>
         <category>Exercise</category>
         <energy>Medium</energy>
-        <description>Follow a beginner yoga flow to release tension in your body.</description>
+        <description>Yoga Session is a great exercise activity when you are feeling stressed.</description>
     </activity>
-
     <activity>
-        <id>ACT021</id>
-        <name>Write a Gratitude List</name>
-        <mood>Sad</mood>
+        <id>ACT013</id>
+        <name>Organize Your Desk</name>
+        <mood>Stressed</mood>
+        <duration>20 minutes</duration>
+        <location>Indoor</location>
+        <category>Productivity</category>
+        <energy>Medium</energy>
+        <description>Organize Your Desk is a great productivity activity when you are feeling stressed.</description>
+    </activity>
+    <activity>
+        <id>ACT014</id>
+        <name>Walk in Nature</name>
+        <mood>Stressed</mood>
+        <duration>25 minutes</duration>
+        <location>Outdoor</location>
+        <category>Mindfulness</category>
+        <energy>Low</energy>
+        <description>Walk in Nature is a great mindfulness activity when you are feeling stressed.</description>
+    </activity>
+    <activity>
+        <id>ACT015</id>
+        <name>Light Cycling</name>
+        <mood>Stressed</mood>
+        <duration>35 minutes</duration>
+        <location>Outdoor</location>
+        <category>Exercise</category>
+        <energy>High</energy>
+        <description>Light Cycling is a great exercise activity when you are feeling stressed.</description>
+    </activity>
+    <activity>
+        <id>ACT016</id>
+        <name>Guided Meditation</name>
+        <mood>Anxious</mood>
         <duration>10 minutes</duration>
         <location>Indoor</location>
         <category>Mindfulness</category>
         <energy>Low</energy>
-        <description>List three things you are grateful for today.</description>
+        <description>Guided Meditation is a great mindfulness activity when you are feeling anxious.</description>
     </activity>
-
     <activity>
-        <id>ACT022</id>
-        <name>Play a Musical Instrument</name>
-        <mood>Happy</mood>
-        <duration>25 minutes</duration>
+        <id>ACT017</id>
+        <name>Colouring Book</name>
+        <mood>Anxious</mood>
+        <duration>20 minutes</duration>
         <location>Indoor</location>
         <category>Creative</category>
-        <energy>Medium</energy>
-        <description>Pick up an instrument and play something you enjoy.</description>
+        <energy>Low</energy>
+        <description>Colouring Book is a great creative activity when you are feeling anxious.</description>
     </activity>
-
     <activity>
-        <id>ACT023</id>
-        <name>Go Bird Watching</name>
-        <mood>Calm</mood>
-        <duration>30 minutes</duration>
+        <id>ACT018</id>
+        <name>Gentle Stretching</name>
+        <mood>Anxious</mood>
+        <duration>15 minutes</duration>
+        <location>Indoor</location>
+        <category>Exercise</category>
+        <energy>Medium</energy>
+        <description>Gentle Stretching is a great exercise activity when you are feeling anxious.</description>
+    </activity>
+    <activity>
+        <id>ACT019</id>
+        <name>Sit Near a Lake</name>
+        <mood>Anxious</mood>
+        <duration>20 minutes</duration>
         <location>Outdoor</location>
         <category>Mindfulness</category>
         <energy>Low</energy>
-        <description>Spend time quietly observing birds in a nearby green space.</description>
+        <description>Sit Near a Lake is a great mindfulness activity when you are feeling anxious.</description>
     </activity>
-
+    <activity>
+        <id>ACT020</id>
+        <name>Slow Walk Outdoors</name>
+        <mood>Anxious</mood>
+        <duration>30 minutes</duration>
+        <location>Outdoor</location>
+        <category>Exercise</category>
+        <energy>Medium</energy>
+        <description>Slow Walk Outdoors is a great exercise activity when you are feeling anxious.</description>
+    </activity>
+    <activity>
+        <id>ACT021</id>
+        <name>Read a Book</name>
+        <mood>Bored</mood>
+        <duration>20 minutes</duration>
+        <location>Indoor</location>
+        <category>Learning</category>
+        <energy>Low</energy>
+        <description>Read a Book is a great learning activity when you are feeling bored.</description>
+    </activity>
+    <activity>
+        <id>ACT022</id>
+        <name>Try a New Recipe</name>
+        <mood>Bored</mood>
+        <duration>45 minutes</duration>
+        <location>Indoor</location>
+        <category>Creative</category>
+        <energy>Medium</energy>
+        <description>Try a New Recipe is a great creative activity when you are feeling bored.</description>
+    </activity>
+    <activity>
+        <id>ACT023</id>
+        <name>Solve a Puzzle</name>
+        <mood>Bored</mood>
+        <duration>30 minutes</duration>
+        <location>Indoor</location>
+        <category>Learning</category>
+        <energy>Medium</energy>
+        <description>Solve a Puzzle is a great learning activity when you are feeling bored.</description>
+    </activity>
     <activity>
         <id>ACT024</id>
+        <name>Photography Walk</name>
+        <mood>Bored</mood>
+        <duration>40 minutes</duration>
+        <location>Outdoor</location>
+        <category>Creative</category>
+        <energy>Medium</energy>
+        <description>Photography Walk is a great creative activity when you are feeling bored.</description>
+    </activity>
+    <activity>
+        <id>ACT025</id>
+        <name>Play Frisbee</name>
+        <mood>Bored</mood>
+        <duration>30 minutes</duration>
+        <location>Outdoor</location>
+        <category>Fun</category>
+        <energy>High</energy>
+        <description>Play Frisbee is a great fun activity when you are feeling bored.</description>
+    </activity>
+    <activity>
+        <id>ACT026</id>
         <name>Take a Power Nap</name>
         <mood>Tired</mood>
         <duration>20 minutes</duration>
         <location>Indoor</location>
         <category>Rest</category>
         <energy>Low</energy>
-        <description>Rest your eyes with a short nap to restore your energy.</description>
+        <description>Take a Power Nap is a great rest activity when you are feeling tired.</description>
     </activity>
-
-    <activity>
-        <id>ACT025</id>
-        <name>Plan a Weekend Trip</name>
-        <mood>Excited</mood>
-        <duration>30 minutes</duration>
-        <location>Indoor</location>
-        <category>Productivity</category>
-        <energy>Medium</energy>
-        <description>Research and plan a fun outing for the upcoming weekend.</description>
-    </activity>
-
-    <activity>
-        <id>ACT026</id>
-        <name>Play Basketball</name>
-        <mood>Energetic</mood>
-        <duration>40 minutes</duration>
-        <location>Outdoor</location>
-        <category>Exercise</category>
-        <energy>High</energy>
-        <description>Shoot some hoops at a nearby court to release energy.</description>
-    </activity>
-
     <activity>
         <id>ACT027</id>
-        <name>Write a Short Story</name>
-        <mood>Bored</mood>
-        <duration>35 minutes</duration>
+        <name>Listen to Relaxing Music</name>
+        <mood>Tired</mood>
+        <duration>20 minutes</duration>
         <location>Indoor</location>
-        <category>Creative</category>
-        <energy>Medium</energy>
-        <description>Let your imagination run wild and write a short piece of fiction.</description>
+        <category>Relaxation</category>
+        <energy>Low</energy>
+        <description>Listen to Relaxing Music is a great relaxation activity when you are feeling tired.</description>
     </activity>
-
     <activity>
         <id>ACT028</id>
-        <name>Have a Picnic</name>
-        <mood>Happy</mood>
-        <duration>60 minutes</duration>
-        <location>Outdoor</location>
-        <category>Social</category>
-        <energy>Medium</energy>
-        <description>Pack some snacks and enjoy a relaxed picnic outdoors.</description>
+        <name>Drink Tea and Read</name>
+        <mood>Tired</mood>
+        <duration>25 minutes</duration>
+        <location>Indoor</location>
+        <category>Relaxation</category>
+        <energy>Low</energy>
+        <description>Drink Tea and Read is a great relaxation activity when you are feeling tired.</description>
     </activity>
-
     <activity>
         <id>ACT029</id>
-        <name>Practice Gratitude Meditation</name>
-        <mood>Anxious</mood>
-        <duration>12 minutes</duration>
-        <location>Indoor</location>
-        <category>Mindfulness</category>
-        <energy>Low</energy>
-        <description>Combine breathing with gratitude to ease anxious thoughts.</description>
+        <name>Easy Walk</name>
+        <mood>Tired</mood>
+        <duration>20 minutes</duration>
+        <location>Outdoor</location>
+        <category>Exercise</category>
+        <energy>Medium</energy>
+        <description>Easy Walk is a great exercise activity when you are feeling tired.</description>
     </activity>
-
     <activity>
         <id>ACT030</id>
-        <name>Declutter a Drawer</name>
-        <mood>Stressed</mood>
-        <duration>15 minutes</duration>
-        <location>Indoor</location>
-        <category>Productivity</category>
-        <energy>Low</energy>
-        <description>Clear out one small drawer or shelf for a quick sense of achievement.</description>
+        <name>Watch the Sunset</name>
+        <mood>Tired</mood>
+        <duration>25 minutes</duration>
+        <location>Outdoor</location>
+        <category>Mindfulness</category>
+        <energy>Medium</energy>
+        <description>Watch the Sunset is a great mindfulness activity when you are feeling tired.</description>
     </activity>
-
     <activity>
         <id>ACT031</id>
-        <name>Watch a Comedy Show</name>
-        <mood>Sad</mood>
+        <name>Go Running</name>
+        <mood>Energetic</mood>
         <duration>30 minutes</duration>
-        <location>Indoor</location>
-        <category>Fun</category>
-        <energy>Low</energy>
-        <description>Lift your mood with a lighthearted comedy episode or clip.</description>
+        <location>Outdoor</location>
+        <category>Exercise</category>
+        <energy>High</energy>
+        <description>Go Running is a great exercise activity when you are feeling energetic.</description>
     </activity>
-
     <activity>
         <id>ACT032</id>
-        <name>Go Swimming</name>
+        <name>Play Basketball</name>
+        <mood>Energetic</mood>
+        <duration>45 minutes</duration>
+        <location>Outdoor</location>
+        <category>Exercise</category>
+        <energy>High</energy>
+        <description>Play Basketball is a great exercise activity when you are feeling energetic.</description>
+    </activity>
+    <activity>
+        <id>ACT033</id>
+        <name>Swimming</name>
         <mood>Energetic</mood>
         <duration>40 minutes</duration>
         <location>Outdoor</location>
         <category>Exercise</category>
-        <energy>High</energy>
-        <description>Cool off and get active with a swim at your local pool.</description>
-    </activity>
-
-    <activity>
-        <id>ACT033</id>
-        <name>Volunteer Locally</name>
-        <mood>Lonely</mood>
-        <duration>60 minutes</duration>
-        <location>Outdoor</location>
-        <category>Social</category>
         <energy>Medium</energy>
-        <description>Connect with your community by helping out at a local event.</description>
+        <description>Swimming is a great exercise activity when you are feeling energetic.</description>
     </activity>
-
     <activity>
         <id>ACT034</id>
-        <name>Try a Colouring Book</name>
-        <mood>Anxious</mood>
+        <name>HIIT Workout</name>
+        <mood>Energetic</mood>
         <duration>20 minutes</duration>
         <location>Indoor</location>
-        <category>Creative</category>
-        <energy>Low</energy>
-        <description>Focus your mind with calming, repetitive colouring patterns.</description>
-    </activity>
-
-    <activity>
-        <id>ACT035</id>
-        <name>Set Small Goals for the Day</name>
-        <mood>Unmotivated</mood>
-        <duration>10 minutes</duration>
-        <location>Indoor</location>
-        <category>Productivity</category>
-        <energy>Low</energy>
-        <description>Write three achievable goals to build momentum for the day.</description>
-    </activity>
-
-    <activity>
-        <id>ACT036</id>
-        <name>Hike a Local Trail</name>
-        <mood>Excited</mood>
-        <duration>50 minutes</duration>
-        <location>Outdoor</location>
         <category>Exercise</category>
         <energy>High</energy>
-        <description>Explore nature with a scenic hike on a nearby trail.</description>
+        <description>HIIT Workout is a great exercise activity when you are feeling energetic.</description>
     </activity>
-
+    <activity>
+        <id>ACT035</id>
+        <name>Dance Workout</name>
+        <mood>Energetic</mood>
+        <duration>25 minutes</duration>
+        <location>Indoor</location>
+        <category>Fitness</category>
+        <energy>Medium</energy>
+        <description>Dance Workout is a great fitness activity when you are feeling energetic.</description>
+    </activity>
+    <activity>
+        <id>ACT036</id>
+        <name>Bird Watching</name>
+        <mood>Calm</mood>
+        <duration>30 minutes</duration>
+        <location>Outdoor</location>
+        <category>Mindfulness</category>
+        <energy>Low</energy>
+        <description>Bird Watching is a great mindfulness activity when you are feeling calm.</description>
+    </activity>
     <activity>
         <id>ACT037</id>
-        <name>Practice Gratitude Journaling</name>
+        <name>Gardening</name>
         <mood>Calm</mood>
-        <duration>10 minutes</duration>
+        <duration>35 minutes</duration>
+        <location>Outdoor</location>
+        <category>Hobby</category>
+        <energy>Medium</energy>
+        <description>Gardening is a great hobby activity when you are feeling calm.</description>
+    </activity>
+    <activity>
+        <id>ACT038</id>
+        <name>Watch the Sunrise</name>
+        <mood>Calm</mood>
+        <duration>25 minutes</duration>
+        <location>Outdoor</location>
+        <category>Mindfulness</category>
+        <energy>Low</energy>
+        <description>Watch the Sunrise is a great mindfulness activity when you are feeling calm.</description>
+    </activity>
+    <activity>
+        <id>ACT039</id>
+        <name>Gratitude Journaling</name>
+        <mood>Calm</mood>
+        <duration>15 minutes</duration>
         <location>Indoor</location>
         <category>Mindfulness</category>
         <energy>Low</energy>
-        <description>Reflect quietly and note down peaceful moments from your day.</description>
+        <description>Gratitude Journaling is a great mindfulness activity when you are feeling calm.</description>
     </activity>
-
     <activity>
-        <id>ACT038</id>
-        <name>Bake Something Sweet</name>
-        <mood>Happy</mood>
-        <duration>50 minutes</duration>
+        <id>ACT040</id>
+        <name>Read Poetry</name>
+        <mood>Calm</mood>
+        <duration>20 minutes</duration>
         <location>Indoor</location>
-        <category>Creative</category>
+        <category>Learning</category>
         <energy>Medium</energy>
-        <description>Bake a favourite treat to share with family or friends.</description>
+        <description>Read Poetry is a great learning activity when you are feeling calm.</description>
     </activity>
-
 </activities>
