@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Find activities that match your mood, location, and energy level in seconds." name="description">
+  <meta content="MoodMate" name="author">
+  <title>
+   Home | MoodMate
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+  <div class="site-wrapper">
+   <header class="site-header">
+    <div class="container navbar-container">
+     <a aria-label="Go to home page" class="site-logo" href="index.html">
+      <img alt="MoodMate logo" class="site-logo-image" src="images/logo.png">
+      <span class="site-logo-text">
+       MoodMate
+      </span>
+     </a>
+     <button aria-controls="mainNavigation" aria-expanded="false" aria-label="Open navigation menu" class="mobile-menu-button" id="mobileMenuButton" type="button">
+      <span class="menu-line">
+      </span>
+      <span class="menu-line">
+      </span>
+      <span class="menu-line">
+      </span>
+     </button>
+     <nav aria-label="Main navigation" class="main-navigation" id="mainNavigation">
+      <ul class="navigation-list">
+       <li class="navigation-item">
+        <a class="nav-link active" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="mood-checker.html">
+         Mood Checker
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="activities.html">
+         Activities
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="relaxation.html">
+         Relaxation
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="journal.html">
+         Journal
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="about.html">
+         About
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </header>
+   <main>
+    <!-- Hero -->
+    <section class="hero">
+     <div class="container hero-content">
+      <div class="hero-text">
+       <span class="hero-badge">
+        ✨ Feel better, one activity at a time
+       </span>
+       <h1 class="hero-title">
+        Find the
+        <span class="hero-title-highlight">
+         perfect activity
+        </span>
+        for your mood
+       </h1>
+       <p class="hero-description">
+        Whether you're bored, stressed, energetic, or just not sure what you feel like doing &mdash;
+                    MoodMate matches your mood, location, and energy level to an activity
+                    that actually fits.
+       </p>
+       <div class="hero-actions">
+        <a class="button button-primary button-large" href="mood-checker.html">
+         Check My Mood
+        </a>
+        <a class="button button-outline button-large" href="activities.html">
+         Browse Activities
+        </a>
+       </div>
+      </div>
+      <div class="hero-image-wrapper">
+       <img alt="Illustration of a smiling face card surrounded by activity chips" class="hero-image" src="images/hero.png">
+      </div>
+     </div>
+    </section>
+    <!-- Recently Viewed -->
+    <section class="page-section-small section-background hidden" id="recentActivitySection">
+     <div class="container">
+      <div class="result-card" id="recentActivityCard">
+      </div>
+     </div>
+    </section>
+    <!-- About -->
+    <section class="page-section section-background">
+     <div class="container">
+      <div class="section-header">
+       <span class="section-label">
+        About
+       </span>
+       <h2 class="section-title">
+        Why MoodMate?
+       </h2>
+       <p class="section-description">
+        We built this so you never have to stare blankly wondering what to do next.
+                    Tell us how you feel, and we'll suggest something worth doing.
+       </p>
+      </div>
+      <div class="grid grid-three">
+       <div class="card">
+        <div class="card-icon">
+         🎯
+        </div>
+        <h3 class="card-title">
+         Personalised
+        </h3>
+        <p class="card-description">
+         Suggestions tailored to your mood, energy level, and where you are.
+        </p>
+       </div>
+       <div class="card">
+        <div class="card-icon">
+         ⚡
+        </div>
+        <h3 class="card-title">
+         Instant
+        </h3>
+        <p class="card-description">
+         Get a matching activity in seconds &mdash; no endless scrolling required.
+        </p>
+       </div>
+       <div class="card">
+        <div class="card-icon">
+         🌿
+        </div>
+        <h3 class="card-title">
+         Balanced
+        </h3>
+        <p class="card-description">
+         From high-energy workouts to calm mindfulness &mdash; something for every moment.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- Mood picker preview -->
+    <section class="page-section section-soft">
+     <div class="container">
+      <div class="section-header">
+       <span class="section-label">
+        Pick a mood
+       </span>
+       <h2 class="section-title">
+        How are you feeling right now?
+       </h2>
+       <p class="section-description">
+        Choose a mood below to jump straight into the Mood Checker.
+       </p>
+      </div>
+      <div class="grid grid-four">
+       <a class="mood-card" href="mood-checker.html">
+        <div class="mood-icon">
+         😊
+        </div>
+        <div class="mood-name">
+         Happy
+        </div>
+       </a>
+       <a class="mood-card" href="mood-checker.html">
+        <div class="mood-icon">
+         😴
+        </div>
+        <div class="mood-name">
+         Tired
+        </div>
+       </a>
+       <a class="mood-card" href="mood-checker.html">
+        <div class="mood-icon">
+         😰
+        </div>
+        <div class="mood-name">
+         Stressed
+        </div>
+       </a>
+       <a class="mood-card" href="mood-checker.html">
+        <div class="mood-icon">
+         🥱
+        </div>
+        <div class="mood-name">
+         Bored
+        </div>
+       </a>
+      </div>
+     </div>
+    </section>
+    <!-- How it works -->
+    <section class="page-section section-background">
+     <div class="container">
+      <div class="section-header">
+       <span class="section-label">
+        How it works
+       </span>
+       <h2 class="section-title">
+        Three simple steps
+       </h2>
+      </div>
+      <div class="grid grid-three steps-grid">
+       <div class="step-card">
+        <h3 class="card-title">
+         Tell us how you feel
+        </h3>
+        <p class="card-description">
+         Select your mood, location, and energy level on the Mood Checker page.
+        </p>
+       </div>
+       <div class="step-card">
+        <h3 class="card-title">
+         We find a match
+        </h3>
+        <p class="card-description">
+         We search our activity collection for the best fit for you right now.
+        </p>
+       </div>
+       <div class="step-card">
+        <h3 class="card-title">
+         Go do it
+        </h3>
+        <p class="card-description">
+         Get a clear recommendation with everything you need to get started.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- Featured activities -->
+    <section class="page-section section-soft">
+     <div class="container">
+      <div class="section-header">
+       <span class="section-label">
+        Popular picks
+       </span>
+       <h2 class="section-title">
+        A few favourites
+       </h2>
+      </div>
+      <div class="grid grid-three">
+       <div class="featured-card">
+        <div class="featured-card-content">
+         <span class="detail-badge">
+          🧘 Mindfulness
+         </span>
+         <h3 class="card-title" style="margin-top:14px;">
+          Deep Breathing
+         </h3>
+         <p class="card-description">
+          A 5-minute reset for anxious moments.
+         </p>
+        </div>
+       </div>
+       <div class="featured-card">
+        <div class="featured-card-content">
+         <span class="detail-badge">
+          🏃 Exercise
+         </span>
+         <h3 class="card-title" style="margin-top:14px;">
+          Go for a Run
+         </h3>
+         <p class="card-description">
+          Burn off energy with a light outdoor jog.
+         </p>
+        </div>
+       </div>
+       <div class="featured-card">
+        <div class="featured-card-content">
+         <span class="detail-badge">
+          🎨 Creative
+         </span>
+         <h3 class="card-title" style="margin-top:14px;">
+          Sketch or Doodle
+         </h3>
+         <p class="card-description">
+          A relaxed way to beat boredom.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <!-- Quote -->
+    <section class="page-section-small section-background">
+     <div class="container">
+      <div class="quote-box">
+       <p class="quote-text" id="dailyQuote">
+        "Take care of your body. It's the only place you have to live."
+       </p>
+       <p class="quote-label">
+        Daily motivation
+       </p>
+      </div>
+     </div>
+    </section>
+    <!-- Benefits -->
+    <section class="page-section section-soft">
+     <div class="container grid grid-four">
+      <div class="info-card">
+       <span class="info-card-number">
+        38+
+       </span>
+       <span class="info-card-label">
+        Activities
+       </span>
+      </div>
+      <div class="info-card">
+       <span class="info-card-number">
+        10
+       </span>
+       <span class="info-card-label">
+        Moods covered
+       </span>
+      </div>
+      <div class="info-card">
+       <span class="info-card-number">
+        2
+       </span>
+       <span class="info-card-label">
+        Locations
+       </span>
+      </div>
+      <div class="info-card">
+       <span class="info-card-number">
+        3
+       </span>
+       <span class="info-card-label">
+        Energy levels
+       </span>
+      </div>
+     </div>
+    </section>
+    <!-- CTA -->
+    <section class="page-section cta-section">
+     <div class="container">
+      <h2 class="cta-title">
+       Ready to find your next activity?
+      </h2>
+      <p class="cta-description">
+       It only takes a few seconds to get a recommendation that actually fits how you feel.
+      </p>
+      <a class="button button-light button-large" href="mood-checker.html">
+       Start the Mood Checker
+      </a>
+     </div>
+    </section>
+   </main>
+   <footer class="site-footer">
+    <div class="container footer-container">
+     <div class="footer-section footer-about">
+      <a aria-label="Go to home page" class="footer-logo" href="index.html">
+       <img alt="MoodMate logo" class="footer-logo-image" src="images/logo.png">
+       <span class="footer-logo-text">
+        MoodMate
+       </span>
+      </a>
+      <p class="footer-description">
+       Find simple and enjoyable activities that match your mood, location, and energy level.
+      </p>
+     </div>
+     <div class="footer-section">
+      <h2 class="footer-heading">
+       Quick Links
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="mood-checker.html">
+         Mood Checker
+        </a>
+       </li>
+       <li>
+        <a href="journal.html">
+         Journal
+        </a>
+       </li>
+       <li>
+        <a href="activities.html">
+         Activities
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h2 class="footer-heading">
+       Explore
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a href="relaxation.html">
+         Relaxation
+        </a>
+       </li>
+       <li>
+        <a href="about.html">
+         About
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <div class="container">
+      <p>
+       &copy;
+       <span id="currentYear">
+       </span>
+       MoodMate. All rights reserved.
+      </p>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="js/main.js">
+  </script>
+ </body>
+</html>

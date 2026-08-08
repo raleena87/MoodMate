@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Simple breathing exercises, screen breaks, and mindfulness tips." name="description">
+  <meta content="MoodMate" name="author">
+  <title>
+   Relaxation | MoodMate
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+  <div class="site-wrapper">
+   <header class="site-header">
+    <div class="container navbar-container">
+     <a aria-label="Go to home page" class="site-logo" href="index.html">
+      <img alt="MoodMate logo" class="site-logo-image" src="images/logo.png">
+      <span class="site-logo-text">
+       MoodMate
+      </span>
+     </a>
+     <button aria-controls="mainNavigation" aria-expanded="false" aria-label="Open navigation menu" class="mobile-menu-button" id="mobileMenuButton" type="button">
+      <span class="menu-line">
+      </span>
+      <span class="menu-line">
+      </span>
+      <span class="menu-line">
+      </span>
+     </button>
+     <nav aria-label="Main navigation" class="main-navigation" id="mainNavigation">
+      <ul class="navigation-list">
+       <li class="navigation-item">
+        <a class="nav-link" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="mood-checker.html">
+         Mood Checker
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="activities.html">
+         Activities
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link active" href="relaxation.html">
+         Relaxation
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="about.html">
+         About
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </header>
+   <main>
+    <section class="page-hero">
+     <div class="container">
+      <h1 class="page-hero-title">
+       Relaxation Tools
+      </h1>
+      <p class="page-hero-description">
+       A few simple tools to help you slow down, breathe, and reset &mdash; no activity list required.
+      </p>
+     </div>
+    </section>
+    <section class="page-section">
+     <div class="container relaxation-intro">
+      <img alt="Illustration of a person breathing calmly" class="relaxation-image" src="images/relaxation.png">
+      <div>
+       <span class="section-label">
+        Take a breath
+       </span>
+       <h2 class="section-title">
+        You deserve a moment to pause
+       </h2>
+       <p class="section-description">
+        Whether you have five minutes or twenty, these tools are designed to help you unwind
+                    wherever you are.
+       </p>
+      </div>
+     </div>
+    </section>
+    <section class="page-section section-soft">
+     <div class="container">
+      <div class="section-header">
+       <span class="section-label">
+        Breathing Exercise
+       </span>
+       <h2 class="section-title">
+        4-7-8 Breathing
+       </h2>
+       <p class="section-description">
+        Inhale for 4 seconds, hold for 7, exhale for 8. Repeat as many times as you like.
+       </p>
+      </div>
+      <div class="exercise-card text-center">
+       <div class="breathing-circle" id="breathingCircle">
+        Breathe
+       </div>
+       <p class="loading-message" id="breathingInstruction">
+        Press start when you're ready
+       </p>
+       <div class="timer-controls">
+        <button class="button button-primary" id="startBreathing" type="button">
+         Start
+        </button>
+        <button class="button button-outline" id="stopBreathing" type="button">
+         Stop
+        </button>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="page-section">
+     <div class="container">
+      <div class="section-header">
+       <span class="section-label">
+        Screen Break
+       </span>
+       <h2 class="section-title">
+        20-Second Eye Break
+       </h2>
+       <p class="section-description">
+        Look away from your screen for 20 seconds to rest your eyes.
+       </p>
+      </div>
+      <div class="exercise-card text-center">
+       <div class="filter-buttons" id="timeChoices" style="justify-content:center; margin-bottom:20px;">
+        <button class="filter-button" data-seconds="30" type="button">
+         30 sec
+        </button>
+        <button class="filter-button active" data-seconds="60" type="button">
+         1 min
+        </button>
+        <button class="filter-button" data-seconds="180" type="button">
+         3 min
+        </button>
+       </div>
+       <div class="timer-display" id="timerDisplay">
+        01:00
+       </div>
+       <div class="timer-controls">
+        <button class="button button-primary" id="startTimer" type="button">
+         Start
+        </button>
+        <button class="button button-outline" id="pauseTimer" type="button">
+         Pause / Resume
+        </button>
+        <button class="button button-outline" id="resetTimer" type="button">
+         Reset
+        </button>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="page-section section-soft">
+     <div class="container grid grid-two">
+      <div class="card">
+       <h3 class="card-title">
+        Stretching Tips
+       </h3>
+       <ul class="relaxation-list">
+        <li>
+         Roll your shoulders slowly, five times in each direction.
+        </li>
+        <li>
+         Gently tilt your head side to side to release neck tension.
+        </li>
+        <li>
+         Stand up and stretch your arms overhead for 10 seconds.
+        </li>
+        <li>
+         Touch your toes slowly to loosen your lower back.
+        </li>
+       </ul>
+      </div>
+      <div class="card">
+       <h3 class="card-title">
+        Mindfulness Tips
+       </h3>
+       <ul class="relaxation-list">
+        <li>
+         Notice five things you can see around you right now.
+        </li>
+        <li>
+         Focus on the sensation of your feet on the floor.
+        </li>
+        <li>
+         Let thoughts pass without judging them.
+        </li>
+        <li>
+         Take three slow breaths before continuing your day.
+        </li>
+       </ul>
+      </div>
+     </div>
+    </section>
+    <section class="page-section-small section-background">
+     <div class="container">
+      <div class="quote-box">
+       <p class="quote-text">
+        "Rest is not a reward for finishing. It's what makes finishing possible."
+       </p>
+       <p class="quote-label">
+        A reminder to slow down
+       </p>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="site-footer">
+    <div class="container footer-container">
+     <div class="footer-section footer-about">
+      <a aria-label="Go to home page" class="footer-logo" href="index.html">
+       <img alt="MoodMate logo" class="footer-logo-image" src="images/logo.png">
+       <span class="footer-logo-text">
+        MoodMate
+       </span>
+      </a>
+      <p class="footer-description">
+       Find simple and enjoyable activities that match your mood, location, and energy level.
+      </p>
+     </div>
+     <div class="footer-section">
+      <h2 class="footer-heading">
+       Quick Links
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="mood-checker.html">
+         Mood Checker
+        </a>
+       </li>
+       <li>
+        <a href="activities.html">
+         Activities
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h2 class="footer-heading">
+       Explore
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a href="relaxation.html">
+         Relaxation
+        </a>
+       </li>
+       <li>
+        <a href="about.html">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="xml/activities.xml" rel="noopener noreferrer" target="_blank">
+         View Activity Collection
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <div class="container">
+      <p>
+       &copy;
+       <span id="currentYear">
+       </span>
+       MoodMate. All rights reserved.
+      </p>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="js/main.js">
+  </script>
+  <script src="js/relaxation.js">
+  </script>
+ </body>
+</html>

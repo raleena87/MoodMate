@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="See your saved mood check-ins over time." name="description">
+  <meta content="MoodMate" name="author">
+  <title>
+   Journal | MoodMate
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+ </head>
+ <body>
+  <div class="site-wrapper">
+   <header class="site-header">
+    <div class="container navbar-container">
+     <a aria-label="Go to home page" class="site-logo" href="index.html">
+      <img alt="MoodMate logo" class="site-logo-image" src="images/logo.png">
+      <span class="site-logo-text">
+       MoodMate
+      </span>
+     </a>
+     <button aria-controls="mainNavigation" aria-expanded="false" aria-label="Open navigation menu" class="mobile-menu-button" id="mobileMenuButton" type="button">
+      <span class="menu-line">
+      </span>
+      <span class="menu-line">
+      </span>
+      <span class="menu-line">
+      </span>
+     </button>
+     <nav aria-label="Main navigation" class="main-navigation" id="mainNavigation">
+      <ul class="navigation-list">
+       <li class="navigation-item">
+        <a class="nav-link" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="mood-checker.html">
+         Mood Checker
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="activities.html">
+         Activities
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="relaxation.html">
+         Relaxation
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link active" href="journal.html">
+         Journal
+        </a>
+       </li>
+       <li class="navigation-item">
+        <a class="nav-link" href="about.html">
+         About
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </header>
+   <main>
+    <section class="page-hero">
+     <div class="container">
+      <h1 class="page-hero-title">
+       Your Mood Journal
+      </h1>
+      <p class="page-hero-description">
+       Every time you use the Mood Checker, it's saved here &mdash; right on this device &mdash; so you can look
+                    back and notice patterns.
+      </p>
+     </div>
+    </section>
+    <section class="page-section">
+     <div class="container">
+      <div class="grid grid-three" id="journalStats">
+      </div>
+     </div>
+    </section>
+    <section class="page-section-small">
+     <div class="container">
+      <div class="journal-list-header">
+       <h2 class="section-title" style="margin:0;">
+        Saved check-ins
+       </h2>
+       <button class="button button-outline button-small hidden" id="clearJournal" type="button">
+        Clear Journal
+       </button>
+      </div>
+      <div class="journal-list" id="journalList">
+      </div>
+      <div class="no-results hidden" id="journalEmpty">
+       <img alt="No journal entries yet" class="no-results-image" src="images/no-results.png">
+       <h3 class="no-results-title">
+        No entries yet
+       </h3>
+       <p class="no-results-text">
+        Head to the Mood Checker and find an activity &mdash; it'll show up here automatically.
+       </p>
+       <div style="margin-top:18px;">
+        <a class="button button-primary" href="mood-checker.html">
+         Check My Mood
+        </a>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="site-footer">
+    <div class="container footer-container">
+     <div class="footer-section footer-about">
+      <a aria-label="Go to home page" class="footer-logo" href="index.html">
+       <img alt="MoodMate logo" class="footer-logo-image" src="images/logo.png">
+       <span class="footer-logo-text">
+        MoodMate
+       </span>
+      </a>
+      <p class="footer-description">
+       Find simple and enjoyable activities that match your mood, location, and energy level.
+      </p>
+     </div>
+     <div class="footer-section">
+      <h2 class="footer-heading">
+       Quick Links
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a href="index.html">
+         Home
+        </a>
+       </li>
+       <li>
+        <a href="mood-checker.html">
+         Mood Checker
+        </a>
+       </li>
+       <li>
+        <a href="journal.html">
+         Journal
+        </a>
+       </li>
+       <li>
+        <a href="activities.html">
+         Activities
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h2 class="footer-heading">
+       Explore
+      </h2>
+      <ul class="footer-links">
+       <li>
+        <a href="relaxation.html">
+         Relaxation
+        </a>
+       </li>
+       <li>
+        <a href="about.html">
+         About
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <div class="container">
+      <p>
+       &copy;
+       <span id="currentYear">
+       </span>
+       MoodMate. All rights reserved.
+      </p>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script src="js/main.js">
+  </script>
+  <script src="js/journal-store.js">
+  </script>
+  <script src="js/journal.js">
+  </script>
+ </body>
+</html>
