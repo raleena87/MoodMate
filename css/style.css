@@ -1102,6 +1102,30 @@ main {
     gap: 12px;
 }
 
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 46px;
+    height: 46px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--radius-round);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-dark);
+}
+
+.back-to-top.hidden {
+    display: none;
+}
+
 .relaxation-list {
     display: grid;
     gap: 14px;
@@ -1548,4 +1572,136 @@ textarea:focus-visible {
         box-shadow: none;
         break-inside: avoid;
     }
+}
+
+
+/* =========================================================
+   14. JOURNAL PAGE
+   ========================================================= */
+
+.journal-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.journal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.journal-entry {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 22px 25px;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-small);
+}
+
+.journal-entry-date {
+    margin-bottom: 6px;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.journal-entry-title {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+}
+
+.journal-entry-activity {
+    margin-bottom: 12px;
+    color: var(--text-medium);
+}
+
+.journal-entry-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.journal-delete {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    color: var(--danger-color);
+    font-size: 0.95rem;
+    background-color: var(--danger-light);
+    border: none;
+    border-radius: var(--radius-round);
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+.journal-delete:hover {
+    opacity: 0.75;
+}
+
+.result-saved-note {
+    margin-top: 16px;
+    color: var(--success-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.result-saved-note a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* Activities page: favorites, mark-as-done, surprise me */
+
+.activity-card {
+    position: relative;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 34px;
+    height: 34px;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1;
+    background-color: var(--surface-soft);
+    border: none;
+    border-radius: var(--radius-round);
+    cursor: pointer;
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.favorite-btn:hover {
+    color: var(--danger-color);
+}
+
+.favorite-btn.active {
+    color: #ffffff;
+    background-color: var(--danger-color);
+}
+
+.activity-card-actions {
+    margin-top: 16px;
+}
+
+.activity-done {
+    opacity: 0.6;
+}
+
+.activity-done .activity-card-title {
+    text-decoration: line-through;
+}
+
+.activity-highlight {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
 }
