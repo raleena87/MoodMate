@@ -1,5 +1,5 @@
 
-const ACTIVITIES_XML_PATH = "xml/activities.xml";
+const ACTIVITIES_XML_PATH = "activities.xml";
 
 let cachedActivities = null;
 
