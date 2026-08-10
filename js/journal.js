@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const emptyState = document.getElementById("journalEmpty");
     const statsRow = document.getElementById("journalStats");
     const clearButton = document.getElementById("clearJournal");
-
     if (!list) return;
 
     render();
@@ -17,20 +16,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     list.addEventListener("click", event => {
-        const button = event.target.closest(".journal-delete");
-        if (!button) return;
+        const deleteButton = event.target.closest(".journal-delete");
+        if (deleteButton) {
+            deleteJournalEntry(deleteButton.dataset.id);
+            render();
+            return;
+        }
 
-        deleteJournalEntry(button.dataset.id);
-        render();
+        const doneButton = event.target.closest(".journal-done-btn");
+        if (doneButton) {
+            toggleJournalEntryDone(doneButton.dataset.id);
+            render();
+        }
     });
 
     function render() {
         const entries = getJournalEntries();
-
         list.classList.toggle("hidden", entries.length === 0);
         emptyState.classList.toggle("hidden", entries.length > 0);
         clearButton.classList.toggle("hidden", entries.length === 0);
-
         renderStats(entries);
         renderList(entries);
     }
@@ -38,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderStats(entries) {
         const topMood = mostFrequent(entries.map(entry => entry.mood));
         const weekCount = entries.filter(entry => isWithinDays(entry.date, 7)).length;
-
         statsRow.innerHTML = `
             <div class="info-card">
                 <span class="info-card-number">${entries.length}</span>
@@ -56,10 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderList(entries) {
         list.innerHTML = "";
-
         entries.forEach(entry => {
             const item = document.createElement("article");
-            item.className = "journal-entry";
+            item.className = "journal-entry" + (entry.done ? " journal-entry-done" : "");
             item.innerHTML = `
                 <div class="journal-entry-main">
                     <div class="journal-entry-date">${formatDate(entry.date)}</div>
@@ -69,6 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span class="activity-tag">${escapeHtml(entry.location)}</span>
                         <span class="activity-tag">${escapeHtml(entry.energy)} energy</span>
                     </div>
+                    ${entry.activityName ? `
+                    <div class="journal-entry-actions">
+                        <button type="button" class="button button-outline button-small journal-done-btn" data-id="${entry.id}">
+                            ${entry.done ? "✓ Done — Undo" : "Mark as Done"}
+                        </button>
+                    </div>` : ""}
                 </div>
                 <button type="button" class="journal-delete" data-id="${entry.id}" aria-label="Delete this entry">✕</button>`;
             list.appendChild(item);
@@ -77,10 +85,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function mostFrequent(values) {
         if (values.length === 0) return "";
-
         const counts = {};
         values.forEach(value => { counts[value] = (counts[value] || 0) + 1; });
-
         return Object.keys(counts).reduce((a, b) => (counts[a] >= counts[b] ? a : b));
     }
 
