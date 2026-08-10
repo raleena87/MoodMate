@@ -380,4 +380,234 @@
     <energy>Medium</energy>
     <description>Bake a favourite treat to share with family or friends.</description>
   </activity>
+<activity>
+    <id>ACT038</id>
+    <name>Bake Something Sweet</name>
+    <mood>Happy</mood>
+    <duration>50 minutes</duration>
+    <location>Indoor</location>
+    <category>Creative</category>
+    <energy>Medium</energy>
+    <description>Bake a favourite treat to share with family or friends.</description>
+  </activity>
+  <activity>
+    <id>ACT039</id>
+    <name>Listen to Calm Music</name>
+    <mood>Stressed</mood>
+    <duration>15 minutes</duration>
+    <location>Indoor</location>
+    <category>Mindfulness</category>
+    <energy>Low</energy>
+    <description>Play a relaxing playlist and focus on the music for a few quiet minutes.</description>
+  </activity>
+  <activity>
+    <id>ACT040</id>
+    <name>Take a Nature Walk</name>
+    <mood>Calm</mood>
+    <duration>25 minutes</duration>
+    <location>Outdoor</location>
+    <category>Mindfulness</category>
+    <energy>Medium</energy>
+    <description>Walk slowly through a green area and pay attention to the sounds and scenery around you.</description>
+  </activity>
+  <activity>
+    <id>ACT041</id>
+    <name>Do a Quick Home Workout</name>
+    <mood>Energetic</mood>
+    <duration>20 minutes</duration>
+    <location>Indoor</location>
+    <category>Exercise</category>
+    <energy>High</energy>
+    <description>Complete a short bodyweight workout using simple exercises such as squats and jumping jacks.</description>
+  </activity>
+  <activity>
+    <id>ACT042</id>
+    <name>Make a Vision Board</name>
+    <mood>Excited</mood>
+    <duration>35 minutes</duration>
+    <location>Indoor</location>
+    <category>Creative</category>
+    <energy>Medium</energy>
+    <description>Collect ideas and images that represent goals or experiences you are excited about.</description>
+  </activity>
+  <activity>
+    <id>ACT043</id>
+    <name>Water Your Plants</name>
+    <mood>Unmotivated</mood>
+    <duration>10 minutes</duration>
+    <location>Indoor</location>
+    <category>Productivity</category>
+    <energy>Low</energy>
+    <description>Take care of your plants as a small and simple task to help you start moving.</description>
+  </activity>
+  <activity>
+    <id>ACT044</id>
+    <name>Message Someone You Trust</name>
+    <mood>Lonely</mood>
+    <duration>10 minutes</duration>
+    <location>Indoor</location>
+    <category>Social</category>
+    <energy>Low</energy>
+    <description>Send a friendly message to someone you trust and start a simple conversation.</description>
+  </activity>
+  <activity>
+    <id>ACT045</id>
+    <name>Watch Funny Videos</name>
+    <mood>Sad</mood>
+    <duration>15 minutes</duration>
+    <location>Indoor</location>
+    <category>Fun</category>
+    <energy>Low</energy>
+    <description>Watch a few light and funny videos to give yourself a small mood boost.</description>
+  </activity>
+  <activity>
+    <id>ACT046</id>
+    <name>Try Box Breathing</name>
+    <mood>Anxious</mood>
+    <duration>5 minutes</duration>
+    <location>Indoor</location>
+    <category>Mindfulness</category>
+    <energy>Low</energy>
+    <description>Breathe in, hold, breathe out, and hold again for equal counts to settle your mind.</description>
+  </activity>
+  <activity>
+    <id>ACT047</id>
+    <name>Play Badminton</name>
+    <mood>Happy</mood>
+    <duration>35 minutes</duration>
+    <location>Outdoor</location>
+    <category>Exercise</category>
+    <energy>High</energy>
+    <description>Enjoy a friendly badminton session outside with a friend or family member.</description>
+  </activity>
+  <activity>
+    <id>ACT048</id>
+    <name>Take Photos Outside</name>
+    <mood>Bored</mood>
+    <duration>30 minutes</duration>
+    <location>Outdoor</location>
+    <category>Creative</category>
+    <energy>Medium</energy>
+    <description>Walk around and photograph interesting colours, objects, buildings, or nature.</description>
+  </activity>
+  <activity>
+    <id>ACT049</id>
+    <name>Clean Your Study Table</name>
+    <mood>Unmotivated</mood>
+    <duration>15 minutes</duration>
+    <location>Indoor</location>
+    <category>Productivity</category>
+    <energy>Low</energy>
+    <description>Clear and organise your study space so it feels easier to begin your next task.</description>
+  </activity>
+  <activity>
+    <id>ACT050</id>
+    <name>Sit in the Morning Sun</name>
+    <mood>Tired</mood>
+    <duration>10 minutes</duration>
+    <location>Outdoor</location>
+    <category>Rest</category>
+    <energy>Low</energy>
+    <description>Spend a few quiet minutes outside in natural light to help yourself feel more awake.</description>
+  </activity>
+  <activity>
+    <id>ACT051</id>
+    <name>Have Tea With Someone</name>
+    <mood>Lonely</mood>
+    <duration>30 minutes</duration>
+    <location>Indoor</location>
+    <category>Social</category>
+    <energy>Low</energy>
+    <description>Share a drink and conversation with a friend or family member.</description>
+  </activity>
+  <activity>
+    <id>ACT052</id>
+    <name>Try a Simple Craft</name>
+    <mood>Bored</mood>
+    <duration>25 minutes</duration>
+    <location>Indoor</location>
+    <category>Creative</category>
+    <energy>Medium</energy>
+    <description>Use paper, string, recycled materials, or other simple items to make a small craft.</description>
+  </activity>
+  <activity>
+    <id>ACT053</id>
+    <name>Walk While Listening to Music</name>
+    <mood>Happy</mood>
+    <duration>25 minutes</duration>
+    <location>Outdoor</location>
+    <category>Fun</category>
+    <energy>Medium</energy>
+    <description>Take an easy walk outside while listening to music you enjoy.</description>
+  </activity>
+  <activity>
+    <id>ACT054</id>
+    <name>Make a To-Do List</name>
+    <mood>Stressed</mood>
+    <duration>10 minutes</duration>
+    <location>Indoor</location>
+    <category>Productivity</category>
+    <energy>Low</energy>
+    <description>Write down your tasks and choose the most important one to reduce mental clutter.</description>
+  </activity>
+  <activity>
+    <id>ACT055</id>
+    <name>Do a Short Stretch Outside</name>
+    <mood>Tired</mood>
+    <duration>12 minutes</duration>
+    <location>Outdoor</location>
+    <category>Exercise</category>
+    <energy>Low</energy>
+    <description>Move gently and stretch your body outdoors to refresh yourself without intense exercise.</description>
+  </activity>
+  <activity>
+    <id>ACT056</id>
+    <name>Explore a New Place Nearby</name>
+    <mood>Excited</mood>
+    <duration>45 minutes</duration>
+    <location>Outdoor</location>
+    <category>Fun</category>
+    <energy>Medium</energy>
+    <description>Visit a nearby place you have not explored before and spend some time looking around.</description>
+  </activity>
+  <activity>
+    <id>ACT057</id>
+    <name>Write a Kind Note to Yourself</name>
+    <mood>Sad</mood>
+    <duration>10 minutes</duration>
+    <location>Indoor</location>
+    <category>Mindfulness</category>
+    <energy>Low</energy>
+    <description>Write a few supportive sentences to yourself as you would to a close friend.</description>
+  </activity>
+  <activity>
+    <id>ACT058</id>
+    <name>Practice a New Skill</name>
+    <mood>Unmotivated</mood>
+    <duration>20 minutes</duration>
+    <location>Indoor</location>
+    <category>Learning</category>
+    <energy>Medium</energy>
+    <description>Choose one small skill and practise it for twenty focused minutes.</description>
+  </activity>
+  <activity>
+    <id>ACT059</id>
+    <name>Play Football</name>
+    <mood>Energetic</mood>
+    <duration>45 minutes</duration>
+    <location>Outdoor</location>
+    <category>Exercise</category>
+    <energy>High</energy>
+    <description>Play a casual football game or practise passing and shooting to use your energy.</description>
+  </activity>
+  <activity>
+    <id>ACT060</id>
+    <name>Sit Quietly in Nature</name>
+    <mood>Anxious</mood>
+    <duration>20 minutes</duration>
+    <location>Outdoor</location>
+    <category>Mindfulness</category>
+    <energy>Low</energy>
+    <description>Find a quiet outdoor place, sit comfortably, and focus on your surroundings and breathing.</description>
+  </activity>
 </activities>
