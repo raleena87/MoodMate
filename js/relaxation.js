@@ -116,8 +116,10 @@ function initScreenBreakTimer() {
 
         timeChoices.querySelectorAll(".filter-button").forEach(function (item) {
             item.classList.remove("active");
+            item.setAttribute("aria-pressed", "false");
         });
         button.classList.add("active");
+        button.setAttribute("aria-pressed", "true");
 
         window.clearInterval(timerInterval);
         timerInterval = null;
