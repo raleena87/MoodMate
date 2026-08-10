@@ -12,21 +12,29 @@ function getJournalEntries() {
 
 function saveJournalEntry(entry) {
     const entries = getJournalEntries();
-
     entries.unshift({
         id: Date.now().toString(),
         date: new Date().toISOString(),
         mood: entry.mood,
         location: entry.location,
         energy: entry.energy,
-        activityName: entry.activityName || ""
+        activityName: entry.activityName || "",
+        done: false
     });
-
     localStorage.setItem(JOURNAL_STORAGE_KEY, JSON.stringify(entries));
 }
 
 function deleteJournalEntry(id) {
     const entries = getJournalEntries().filter(entry => entry.id !== id);
+    localStorage.setItem(JOURNAL_STORAGE_KEY, JSON.stringify(entries));
+}
+
+function toggleJournalEntryDone(id) {
+    const entries = getJournalEntries();
+    const entry = entries.find(item => item.id === id);
+    if (!entry) return;
+
+    entry.done = !entry.done;
     localStorage.setItem(JOURNAL_STORAGE_KEY, JSON.stringify(entries));
 }
 
