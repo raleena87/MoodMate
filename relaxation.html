@@ -8,12 +8,6 @@
   <title>
    Relaxation | MoodMate
   </title>
-
-<link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-  <link rel="apple-touch-icon" href="images/logo.png">
-  <link rel="shortcut icon" href="images/logo.png">
-  
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -113,7 +107,7 @@
        <div class="breathing-circle" id="breathingCircle">
         Breathe
        </div>
-       <p class="loading-message" id="breathingInstruction">
+       <p class="loading-message" id="breathingInstruction" aria-live="polite">
         Press start when you're ready
        </p>
        <div class="timer-controls">
@@ -142,17 +136,17 @@
       </div>
       <div class="exercise-card text-center">
        <div class="filter-buttons" id="timeChoices" style="justify-content:center; margin-bottom:20px;">
-        <button class="filter-button" data-seconds="30" type="button">
+        <button class="filter-button" data-seconds="30" type="button" aria-pressed="false">
          30 sec
         </button>
-        <button class="filter-button active" data-seconds="60" type="button">
+        <button class="filter-button active" data-seconds="60" type="button" aria-pressed="true">
          1 min
         </button>
-        <button class="filter-button" data-seconds="180" type="button">
+        <button class="filter-button" data-seconds="180" type="button" aria-pressed="false">
          3 min
         </button>
        </div>
-       <div class="timer-display" id="timerDisplay">
+       <div class="timer-display" id="timerDisplay" aria-live="polite">
         01:00
        </div>
        <div class="timer-controls">
@@ -275,7 +269,7 @@
         </a>
        </li>
        <li>
-        <a href="xml/activities.xml" rel="noopener noreferrer" target="_blank">
+        <a href="activities.xml" rel="noopener noreferrer" target="_blank">
          View Activity Collection
         </a>
        </li>
