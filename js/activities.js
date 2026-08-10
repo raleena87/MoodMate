@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!grid) return;
 
     const FAVORITES_KEY = "moodmateFavorites";
-    const DONE_KEY = "moodmateDoneActivities";
 
     let activities = [];
     let currentResults = [];
@@ -56,12 +55,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const favoriteButton = event.target.closest(".favorite-btn");
         if (favoriteButton) {
             toggleFavorite(favoriteButton.dataset.id);
-            return;
-        }
-
-        const doneButton = event.target.closest(".done-btn");
-        if (doneButton) {
-            toggleDone(doneButton.dataset.id);
         }
     });
 
@@ -115,10 +108,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         results.forEach(activity => {
             const favorited = isFavorite(activity.id);
-            const done = isDone(activity.id);
 
             const card = document.createElement("article");
-            card.className = "activity-card" + (done ? " activity-done" : "");
+            card.className = "activity-card";
             card.dataset.id = activity.id;
             card.innerHTML = `
                 <button type="button" class="favorite-btn${favorited ? " active" : ""}" data-id="${escapeHtml(activity.id)}" aria-label="Toggle favorite">
@@ -133,11 +125,6 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <span class="activity-tag">${escapeHtml(activity.location)}</span>
                     <span class="activity-tag">${escapeHtml(activity.energy)}</span>
                     <span class="activity-tag">${escapeHtml(activity.duration)}</span>
-                </div>
-                <div class="activity-card-actions">
-                    <button type="button" class="button button-outline button-small done-btn" data-id="${escapeHtml(activity.id)}">
-                        ${done ? "✓ Done — Undo" : "Mark as Done"}
-                    </button>
                 </div>`;
             grid.appendChild(card);
         });
@@ -166,32 +153,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
         localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
-        applyFilters();
-    }
-
-    /* Done: same array-in-localStorage pattern as favorites. */
-    function getDone() {
-        try {
-            return JSON.parse(localStorage.getItem(DONE_KEY)) || [];
-        } catch (error) {
-            return [];
-        }
-    }
-
-    function isDone(id) {
-        return getDone().includes(id);
-    }
-
-    function toggleDone(id) {
-        let done = getDone();
-
-        if (done.includes(id)) {
-            done = done.filter(doneId => doneId !== id);
-        } else {
-            done.push(id);
-        }
-
-        localStorage.setItem(DONE_KEY, JSON.stringify(done));
         applyFilters();
     }
 });
