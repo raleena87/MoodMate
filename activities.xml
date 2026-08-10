@@ -380,16 +380,6 @@
     <energy>Medium</energy>
     <description>Bake a favourite treat to share with family or friends.</description>
   </activity>
-<activity>
-    <id>ACT038</id>
-    <name>Bake Something Sweet</name>
-    <mood>Happy</mood>
-    <duration>50 minutes</duration>
-    <location>Indoor</location>
-    <category>Creative</category>
-    <energy>Medium</energy>
-    <description>Bake a favourite treat to share with family or friends.</description>
-  </activity>
   <activity>
     <id>ACT039</id>
     <name>Listen to Calm Music</name>
